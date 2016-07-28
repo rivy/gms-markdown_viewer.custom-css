@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        markdown_viewer.custom.css.user.js
+// @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
 // @version     1.01
