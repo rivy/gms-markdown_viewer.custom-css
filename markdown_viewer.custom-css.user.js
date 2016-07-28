@@ -13,7 +13,6 @@
 // @include     file://*.mdwn
 // @include     file://*.md
 //
-// @version     1
 // @grant       none
 // ==/UserScript==
 //
