@@ -2,7 +2,7 @@
 // @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
-// @version     1.2
+// @version     1.30
 // @updateURL   https://raw.githubusercontent.com/rivy/gms-markdown_viewer.custom-css/master/markdown_viewer.custom-css.user.js
 //
 // file extension: .m(arkdown|kdn?|d(o?wn)?)
