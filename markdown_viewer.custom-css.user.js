@@ -2,7 +2,7 @@
 // @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
-// @version     1.30
+// @version     1.31
 // @updateURL   https://raw.githubusercontent.com/rivy/gms-markdown_viewer.custom-css/master/markdown_viewer.custom-css.user.js
 //
 // file extension: .m(arkdown|kdn?|d(o?wn)?)
@@ -30,7 +30,15 @@ link.href = 'data:text/css,'
   + 'body { font-family: Lora, "Noto Serif", "DejaVu Serif", Palatino, serif; font-size: 1em; }'
   + 'body { max-width: 90%; }'
   + 'h1, h2, h3, h4, h5, h6 { font-family: "Fira Sans", "Open Sans", "DejaVu Sans", Calibri, Arial, sans-serif; }'
-  + 'h1, h2, h3, h4, h5, h6 { font-weight: 300; }'
+  + 'h1, h2 { font-weight: 400; }'
+  + 'h3, h4 { font-weight: 300; }'
+  + 'h5, h6 { font-weight: 200; }'
+  + 'h1 { font-size: 3em }'
+  + 'h2 { font-size: 2.5em }'
+  + 'h3 { font-size: 2em }'
+  + 'h4 { font-size: 1.5em }'
+  + 'h5, h6 { font-size: 1.25em }'
+  + 'h6 { color: gray }'
   + 'code { font-family: "Fira Mono", "Open Sans Mono", "Anonymous Pro", monospace; font-size: 0.8em; }'
   + 'table { width: auto; }'
   ;
