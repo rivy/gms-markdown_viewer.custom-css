@@ -2,7 +2,7 @@
 // @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
-// @version     1.32
+// @version     1.33
 // @updateURL   https://raw.githubusercontent.com/rivy/gms-markdown_viewer.custom-css/master/markdown_viewer.custom-css.user.js
 //
 // file extension: .m(arkdown|kdn?|d(o?wn)?)
@@ -39,7 +39,9 @@ link.href = 'data:text/css,'
   + 'h4 { font-size: 1.5em }'
   + 'h5, h6 { font-size: 1.25em }'
   + 'h6 { color: gray }'
-  + 'code { font-family: "Fira Mono", "Open Sans Mono", "Anonymous Pro", monospace; font-size: 0.8em; }'
+  + 'pre { border-left: 4px solid green; }'
+  + 'code { font-family: "Fira Mono", "Open Sans Mono", "Anonymous Pro", monospace; font-size: 80%; }'
+  + 'sup code { padding: 0; background: none; }' // used for custom footnotes
   + 'table { width: auto; }'
   //// see jsfiddle @ http://jsfiddle.net/5HQ7p
   //+ "h1:after { content:' '; display:block; border:1px dashed #505050; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; }"
