@@ -2,7 +2,7 @@
 // @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
-// @version     1.34
+// @version     1.35
 // @updateURL   https://raw.githubusercontent.com/rivy/gms-markdown_viewer.custom-css/master/markdown_viewer.custom-css.user.js
 //
 // file extension: .m(arkdown|kdn?|d(o?wn)?)
@@ -33,7 +33,7 @@ link.href = 'data:text/css,'
   + 'h1, h2 { font-weight: 400; }'
   + 'h3, h4 { font-weight: 300; }'
   + 'h5, h6 { font-weight: 200; }'
-  + 'h1 { font-size: 3em }'
+  + 'h1 { font-size: 3em; border-bottom: 2px solid darkgray; }'
   + 'h2 { font-size: 2.5em }'
   + 'h3 { font-size: 2em }'
   + 'h4 { font-size: 1.5em }'
