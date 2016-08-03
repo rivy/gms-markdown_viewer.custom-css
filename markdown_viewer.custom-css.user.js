@@ -2,7 +2,7 @@
 // @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
-// @version     1.36
+// @version     1.37
 // @updateURL   https://raw.githubusercontent.com/rivy/gms-markdown_viewer.custom-css/master/markdown_viewer.custom-css.user.js
 //
 // file extension: .m(arkdown|kdn?|d(o?wn)?)
@@ -45,7 +45,7 @@ link.href = 'data:text/css,'
   + 'pre { border-left: 4px solid green; }'
   + 'code { font-family: "Fira Mono", "Open Sans Mono", "Anonymous Pro", monospace; font-size: 80%; }'
   + 'code { border: 1px solid teal; border-radius: 2px; }'
-  + 'pre code { padding: 0em 0.2em; border: none; background: none; font-size: 75%; line-height: 1.5; }'
+  + 'pre code { padding: 0; border: none; background: none; font-size: 75%; line-height: 1.5; }'
   + 'sup code { padding: 0; background: none; font-size: 75%; border: none; }'
   + 'table { width: auto; }'
   ;
