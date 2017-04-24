@@ -2,7 +2,7 @@
 // @name        markdown_viewer.custom-css.user.js
 // @namespace   com.houseofivy
 //
-// @version     1.37
+// @version     1.38
 // @updateURL   https://raw.githubusercontent.com/rivy/gms-markdown_viewer.custom-css/master/markdown_viewer.custom-css.user.js
 //
 // file extension: .m(arkdown|kdn?|d(o?wn)?)
@@ -16,9 +16,16 @@
 // @grant       none
 // ==/UserScript==
 //
-// add customizations to the base css for the "Markdown Viewer" Firefox extension
+// add customizations to the base css for the "Markdown Viewer" Firefox extension [by Thibaut Rousseau]
 // ref: [Markdown Viewer] https://github.com/Thiht/markdown-viewer / https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer
+// NOTE: uses GreaseMonkey Firefox extension @ https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 // NOTE: must have "extensions.greasemonkey.fileIsGreasable"=TRUE (found in firefox about:config)
+//
+// add compatible customizations to the base css for "Markdown Viewer" Chrome extension [by Simeon Velichkov]
+// ref: [Markdown Viewer] https://github.com/simov/markdown-viewer / https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en
+// NOTE: must enable "Allow access to file URLs" for customization of local markdown files
+// NOTE: uses TamperMonkey  Chrome extension @ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
+// NOTE: * this is currently a *hack* since the Chrome "Markdown Viewer" extension adds the css into the BODY instead of the HEAD
 //
 var link = window.document.createElement('link');
 link.rel = 'stylesheet';
@@ -49,4 +56,5 @@ link.href = 'data:text/css,'
   + 'sup code { padding: 0; background: none; font-size: 75%; border: none; }'
   + 'table { width: auto; }'
   ;
-document.getElementsByTagName('HEAD') [0].appendChild(link);
+document.getElementsByTagName('HEAD')[0].appendChild(link);
+document.getElementsByTagName('BODY')[0].appendChild(link);
